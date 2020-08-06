@@ -1,0 +1,343 @@
+/*slider ->*/
+.carousel-control.right, .carousel-control.left {
+    background-image: -webkit-linear-gradient(left,#0000 0,#00000000 100%);
+}
+
+.carousel-control.right, .carousel-control.left {
+    right: 0;
+    top: 50px;
+    width: 0;
+}
+
+.item {
+    position: relative;
+    height: 400px;
+}
+
+.banner {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 600px;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #15D42E;
+    border-radius: 100px;
+}
+
+.carousel-indicators .active {
+    width: 17px;
+    height: 17px;
+    border-radius: 100px;
+    background-color: #15D42E;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: 35px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: 35px;
+}
+
+.carousel {
+    max-width: 1140px;
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+h1 {
+    margin-bottom: 50px;
+}
+
+.btn-carousel {
+    width: 236px;
+    height: 51;
+    background-color: #15D42E;
+    color: #fff;
+    padding: 13px 77px;
+    border-radius: 100px;
+    
+}
+
+article {
+    max-width: 1140px;
+    margin: auto;
+    padding: 30px;
+}
+
+article h2{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.cards {
+   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card__icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #f2f2f269;
+    padding: 20px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.card__image {
+    padding-top: 20px;
+}
+
+.card__image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 260px;
+}
+
+.card__header h4, .card__cost, .card__price {
+    text-align: center;
+}
+
+.card__stars {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.card__cost span, .card__price span {
+    font-weight: bold;
+    color: #15D42E;
+}
+
+.card__cost, .card__price {
+    font-weight: bold;
+}
+
+.adversting img {
+    width: 100%;
+    max-width: 1140px;
+}
+
+main .deal {
+    background-image: url("../img/Rectangle 43.png");
+    background-size: cover;
+}
+
+.deal__image img {
+    width: 100%;
+    max-width: 360px;
+}
+
+.deal__article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deal__redate {
+    background-color: #fff;
+    width: 100%;
+    max-width: 260px;
+    height: 230px;
+    border: solid 1px #15D42E;
+    padding: 20px;
+}
+
+.btn-redate {
+    border-radius: 100px;
+}
+
+.deal__electric span {
+    font-weight: bold;
+}
+
+.deal__stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-deal {
+    display: inline-block;
+    background-color: #15D42E;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.deal__cost, .deal__price {
+    margin-top: 10px ;
+}
+
+.deal__time {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review {
+    width: 100%;
+    max-width: 160px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.review img {
+    width: 100%;
+    max-width: 160px;
+    
+}
+
+.review span {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+main .subscribe {
+    background-color: #101396;
+}
+
+/* <- slider */
+
+.subscribe__content {
+    display: flex;
+    justify-content: start;
+}
+
+.description {
+    padding-top: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.btn-description {
+    border-radius: 100px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.logs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.log {
+    margin: 2px;
+}
+
+.log img {
+    width: 100%;
+    max-width: 165px;
+}
+
+
+
+@media (max-width: 960px) {
+    
+    
+    .third {
+        flex-wrap: wrap;
+    }
+
+    .card-third {
+        width: 28%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    .deal {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 764px) {
+    /*slider ->*/
+    .btn-carousel:hover {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .carousel-control {
+        width: 0;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .carousel-control.right, .carousel-control.left {
+        display: none;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .active {
+        height: 500px;
+    }
+
+    .carousel-indicators {
+        bottom: 30px;
+    }
+    /* <- slider */
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 48%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .btn-description {
+        background-color: #15D42E;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
+    /*slider ->*/
+    h1 {
+        font-size: 20px;
+    }
+
+    .active {
+        height: 300px;
+    }
+
+    .carousel-indicators {
+        bottom: 30px;
+    }
+    /* <- slider */
+
+}
